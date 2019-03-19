@@ -1,0 +1,14 @@
+
+<form action="/account/create" method="post">
+    <label for="username">User Name</</label>
+    <input type="text" name ="[accounts]username" />
+    <label for="email">Email</</label>
+    <input type="text" name ="[accounts]email" />
+    <label for="password">Password</</label>
+    <input type="text" name ="[accounts]password" />
+    <input type="submit" />
+</form>
+<br/>
+<% @account.errors.full_messages.each do |message| %>
+    <%= message %>. <br />
+<%end%>
